@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.PrincipalController">
+   <children>
+      <VBox prefHeight="602.0" prefWidth="191.0" spacing="25.0" style="-fx-background-color: #000000;">
+         <children>
+            <ImageView fitHeight="153.0" fitWidth="143.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Imagenes/LogoMeca.png" />
+               </image>
+               <VBox.margin>
+                  <Insets left="25.0" top="11.0" />
+               </VBox.margin>
+            </ImageView>
+            <Label fx:id="btnNuevaVenta" alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#clickNuevaVenta" prefHeight="53.0" prefWidth="181.0" style="-fx-background-color: E1DDDD;" text="✍ Nueva Venta" textAlignment="CENTER">
+               <font>
+                  <Font name="Leelawadee UI" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <VBox.margin>
+                  <Insets left="5.0" />
+               </VBox.margin>            
+            </Label>
+            <Label fx:id="Proveedor" alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#clickProveedor" prefHeight="53.0" prefWidth="181.0" style="-fx-background-color: E1DDDD;" text="☎ Proveedor">
+               <VBox.margin>
+                  <Insets left="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Leelawadee UI" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label fx:id="Producto" alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#clickProducto" prefHeight="53.0" prefWidth="181.0" style="-fx-background-color: E1DDDD;" text="🛠 Producto">
+               <font>
+                  <Font name="Leelawadee UI" size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="5.0" />
+               </VBox.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label fx:id="Ventas" alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#clickVentas" prefHeight="53.0" prefWidth="181.0" style="-fx-background-color: E1DDDD;" text="📈 Ventas">
+               <font>
+                  <Font name="Leelawadee UI" size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="5.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label fx:id="lbUsuario" alignment="CENTER" contentDisplay="CENTER" prefHeight="53.0" prefWidth="181.0" text="Label" textFill="WHITE">
+               <font>
+                  <Font name="Leelawadee UI" size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="5.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+      <StackPane fx:id="panelOpciones" prefHeight="602.0" prefWidth="912.0" />
+   </children>
+</HBox>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="panelOpciones" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="982.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ProveedorController">
+   <children>
+      <Pane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Label layoutX="415.0" layoutY="14.0" text="Proveedor">
+               <font>
+                  <Font name="Leelawadee UI Bold" size="35.0" />
+               </font>
+            </Label>
+            <Label layoutX="380.0" layoutY="99.0" text="Nit/Rut :">
+               <font>
+                  <Font name="Leelawadee UI" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="654.0" layoutY="99.0" text="Empresa :">
+               <font>
+                  <Font name="Leelawadee UI" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="380.0" layoutY="184.0" text="Numero Telefonico :">
+               <font>
+                  <Font name="Leelawadee UI" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtNumeroProveedor" layoutX="58.0" layoutY="128.0" prefHeight="31.0" prefWidth="201.0" />
+            <TextField fx:id="txtNit" layoutX="380.0" layoutY="128.0" />
+            <TextField fx:id="txtEmpresa" layoutX="654.0" layoutY="128.0" prefHeight="31.0" prefWidth="242.0" />
+            <TextField fx:id="txtNumeroTelefono" layoutX="380.0" layoutY="209.0" prefHeight="25.0" prefWidth="201.0" />
+            <Separator layoutX="28.0" layoutY="86.0" orientation="VERTICAL" prefHeight="165.0" prefWidth="6.0" />
+            <Separator layoutX="133.0" layoutY="86.0" prefHeight="5.0" prefWidth="796.0" />
+            <Separator layoutX="32.0" layoutY="246.0" prefHeight="5.0" prefWidth="898.0" />
+            <Separator layoutX="926.0" layoutY="85.0" orientation="VERTICAL" prefHeight="165.0" prefWidth="6.0" />
+            <TableView fx:id="tableProveedor" layoutX="97.0" layoutY="308.0" prefHeight="358.0" prefWidth="768.0">
+              <columns>
+                <TableColumn fx:id="colNoProveedor" prefWidth="180.0" text="NoProveedor" />
+                <TableColumn fx:id="colNit" prefWidth="180.0" text="Nit" />
+                  <TableColumn fx:id="colEmpresa" prefWidth="220.0" text="Nombre Empresa" />
+                  <TableColumn fx:id="coltelefono" prefWidth="190.0" text="Numero Telefonico" />
+              </columns>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </TableView>
+            <Button fx:id="btnGuardar" layoutX="231.0" layoutY="258.0" mnemonicParsing="false" onAction="#onClickGuardar" style="-fx-background-color: #000000;" text="Guardar" textFill="#f5f5f5">
+               <font>
+                  <Font name="Leelawadee UI Bold" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnEliminar" layoutX="631.0" layoutY="258.0" mnemonicParsing="false" onAction="#onClickBorrar" style="-fx-background-color: #000000;" text="Eliminar" textFill="#f5f5f5">
+               <font>
+                  <Font name="Leelawadee UI Bold" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label layoutX="33.0" layoutY="77.0" text="Area De Registro">
+               <font>
+                  <Font name="Leelawadee UI" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="59.0" layoutY="99.0" text="Numero de Proveedor :">
+               <font>
+                  <Font name="Leelawadee UI" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</StackPane>
